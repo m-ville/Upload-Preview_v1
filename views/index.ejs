@@ -1,0 +1,21 @@
+<%- include("partials/header"); %>
+    <div>
+        <h1>Upload and Preview you Image!</h1>
+    <p class="limit-text">( file-size < 2MB )</p>
+    </div>
+
+    <div class="form_container">
+        <form class="form-group" action="/" method="post" encType="multipart/form-data">
+
+            <input type="file" name="uploadImg" class="form-control-file" id="fileUP">
+            <button type="submit" class="btn btn-primary btn-lg">Upload Image</button>
+            
+        </form>
+    </div>
+
+
+    <div class="img_conatiner">
+        <img src="imgs/UploadedFiles/<%=name%>" alt="<%=altText%>">
+    </div>
+
+<%- include("partials/footer"); %>
